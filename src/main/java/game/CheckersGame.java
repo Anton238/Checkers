@@ -63,8 +63,8 @@ public class CheckersGame {
      */
     private void takeMove() {
         if (color == COLOR.WHITE) {
-            HumanPlayer autoPlayer = new HumanPlayer(board, statistics);
-            autoPlayer.move();
+            HumanPlayer humanPlayer = new HumanPlayer(board, statistics);
+            humanPlayer.move();
         } else {
             AutoPlayer autoPlayer = new AutoPlayer(board, statistics, COLOR.BLACK);
             autoPlayer.move();
